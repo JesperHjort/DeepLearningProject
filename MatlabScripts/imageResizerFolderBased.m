@@ -10,7 +10,7 @@ format long g;
 format compact;
 
 % Define a starting folder.
-start_path = fullfile('C:\Data\Workspace\GitHub\DeepLearningProject\LocalContent\Datasets\Orginial');
+start_path = fullfile('C:\Data\Workspace\GitHub\DeepLearningProject\LocalContent\Datasets\Resized_180');
 if ~exist(start_path, 'dir')
 	start_path = matlabroot;
 end
@@ -74,7 +74,7 @@ if totalNumberOfFiles >= 1
 % 		fprintf('     Processing file %d of %d : "%s".\n', k, totalNumberOfFiles, fullFileName);
         I = imread(fullFileName);
         I = imresize(I,[180 180]);
-        imwrite(I,[fullFileName '.png']);
+        imwrite(I,fullFileName);
 		[~, baseNameNoExt, ~] = fileparts(thisBaseFileName);
 		fprintf('%s\n', baseNameNoExt);
 	end
