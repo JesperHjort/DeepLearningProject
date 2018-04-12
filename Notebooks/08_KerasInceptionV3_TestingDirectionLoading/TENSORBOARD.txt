@@ -1,1 +1,1 @@
-tensorboard --logdir C:\Data\Workspace\GitHub\DeepLearningProject\LocalContent\Logs\KerasRetrainInceptionv3_3
+tensorboard --logdir C:\Data\Workspace\GitHub\DeepLearningProject\LocalContent\Logs\08_KerasInceptionV3_TestingDirectionLoading
